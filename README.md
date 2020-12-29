@@ -6,20 +6,27 @@ docker image based off of ubuntu:18.04 for [TP-Link Omada Controller](https://ww
 
 ### Tags for `amd64`
 
-* `latest`, `4.1` - Omada Controller 4.1.x (currently 4.1.5)
-* `3.2` - Omada Controller 3.2.x (currently 3.2.10)
+* `latest`, `4.2` - Omada Controller 4.2.x (currently 4.2.8)
+* `4.1` - Omada Controller 4.1.x (currently 4.1.5)
+* `3.2` - Omada Controller 3.2.x (currently 3.2.14)
 * `3.1` - Omada Controller 3.1.x (currently 3.1.13)
 * `3.0` - Omada Controller 3.0.x (currently 3.0.5)
 
 ### Tags for `armv7l`
 
-* `latest-armv7l`, `4.1-armv7l` - Omada Controller 4.1.x (currently 4.1.5)
-* `3.2-armv7l` - Omada Controller 3.2.x (currently 3.2.10)
+* `latest-armv7l`, `4.2-armv7l` - Omada Controller 4.2.x (currently 4.2.8)
+* `4.1-armv7l` - Omada Controller 4.1.x (currently 4.1.5)
+* `3.2-armv7l` - Omada Controller 3.2.x (currently 3.2.14)
 
 ### Tags for `arm64`
 
-* `latest-arm64`, `4.1-arm64` - Omada Controller 4.1.x (currently 4.1.5)
-* `3.2-arm64` - Omada Controller 3.2.x (currently 3.2.10)
+* `latest-arm64`, `4.2-arm64` - Omada Controller 4.2.x (currently 4.2.4)
+* `4.1-arm64` - Omada Controller 4.1.x (currently 4.1.5)
+* `3.2-arm64` - Omada Controller 3.2.x (currently 3.2.14)
+
+## Issues
+
+If you have issues running the controller, feel free to [file an issue](https://github.com/mbentley/docker-omada-controller/issues/new) and I will help as I can.  If you are specifically having a problem that is related to the actual software, I would suggest filing an issue on the [TP-Link community forums](https://community.tp-link.com/en/business/forum/582) as I do not have access to source code to debug those issues.  If you're not sure where the problem might be, I can help determine if it is a running in Docker issue or a software issue.
 
 ## Upgrading to 4.1
 
@@ -66,7 +73,7 @@ docker run -d \
   -v omada-data:/opt/tplink/EAPController/data \
   -v omada-work:/opt/tplink/EAPController/work \
   -v omada-logs:/opt/tplink/EAPController/logs \
-  mbentley/omada-controller:4.1
+  mbentley/omada-controller:4.2
 ```
 
 <details>
@@ -89,7 +96,7 @@ docker run -d \
   -v omada-data:/opt/tplink/EAPController/data \
   -v omada-work:/opt/tplink/EAPController/work \
   -v omada-logs:/opt/tplink/EAPController/logs \
-  mbentley/omada-controller:4.1-armv7l
+  mbentley/omada-controller:4.2-armv7l
 ```
 </details>
 
@@ -113,7 +120,7 @@ docker run -d \
   -v omada-data:/opt/tplink/EAPController/data \
   -v omada-work:/opt/tplink/EAPController/work \
   -v omada-logs:/opt/tplink/EAPController/logs \
-  mbentley/omada-controller:4.1-arm64
+  mbentley/omada-controller:4.2-arm64
 ```
 </details>
 
